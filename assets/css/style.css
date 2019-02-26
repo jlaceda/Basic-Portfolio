@@ -6,7 +6,7 @@ body {
     height: 100%;
 }
 
-h1, h2 {
+h1, h2, .project span {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -60,7 +60,8 @@ li a {
 
 li a:hover,
 a.selected,
-input[type="submit"] {
+input[type="submit"],
+.project span {
     background-color: #4aaaa5;
     color:white; 
 }
@@ -81,6 +82,7 @@ section {
     border-color: #ddd;
     border-style: solid;
     background-color: white;
+    overflow: auto;
 }
 
 section hr {
@@ -152,4 +154,42 @@ input[type="submit"] {
     display: block;
     width: 10%;
     padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+/* portfolio page specific css */
+
+.project {
+    width: 275px;
+    height: 200px;
+    margin: 2em;
+    float: left;
+}
+
+.project span {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 6.5em;
+    padding: 0.75em 0em 0.75em 0em;
+    font-size: 1.2em;
+}
+
+#hangman {
+    background-image: url(../images/hangman.jpg);
+}
+
+#rpg-game {
+    background-image: url(../images/rpg-game.jpg);
+}
+
+#trivia {
+    background-image: url(../images/trivia.jpg);
+}
+
+#widget {
+    background-image: url(../images/widget.jpg);
+}
+
+#rps {
+    background-image: url(../images/rps.jpg);
 }
