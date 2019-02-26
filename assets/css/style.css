@@ -6,7 +6,7 @@ body {
     height: 100%;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -59,7 +59,8 @@ li a {
 }
 
 li a:hover,
-a.selected {
+a.selected,
+input[type="submit"] {
     background-color: #4aaaa5;
     color:white; 
 }
@@ -103,7 +104,7 @@ footer {
     font-size: small;
 }
 
-section h1 {
+section h2 {
     color: #4aaaa5;
     margin: 0em 0em 0.75em 0em;
 }
@@ -112,4 +113,43 @@ section h1 {
     content: "";
     clear: both;
     display: block;
+}
+
+/* contact page specific css */
+
+form {
+    width: 960px;
+}
+
+label,
+input,
+textarea{
+    display: block;
+    width: 100%;
+    line-height: 1.5em;
+    width: 955px;
+}
+
+label {
+    margin-bottom: 0.25em;
+}
+
+input {
+    margin-bottom: 1em;
+    padding: 0.5em 0em 0.5em 0em;
+    font-size: 0.75em;
+}
+
+textarea {
+    font-size: 1em;
+    margin-bottom: 1em;
+    resize:none;
+}
+
+input[type="submit"] {
+    margin-bottom: 0em;
+    font-size: 1em;
+    display: block;
+    width: 10%;
+    padding: 0.2em 0.5em 0.2em 0.5em;
 }

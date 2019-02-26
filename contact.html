@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>John Laceda</title>
+        <title>John Michael Laceda</title>
         <meta charset="utf-8">
         <link href="assets/css/style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
 
         <header>
-            <h1>John Laceda</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <div id="inside-header">
+                <h1>John Michael Laceda</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#" class="selected">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <section>
             <h2>Contact</h2>
             <hr>
-            <form action="/post_message" method="POST">
+            <form action="contact.html" method="GET">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" placeholder="John Smith" required>
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
                 <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
+                <textarea name="message" id="message" rows="10"></textarea>
                 <input type="submit" value="Submit">
             </form>
         </section>
 
-        <footer>&copy; 2019 John Laceda</footer>
+        <footer>&copy; 2019 John Michael Laceda</footer>
     </body>
 </html>
