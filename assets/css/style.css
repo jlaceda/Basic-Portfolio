@@ -3,7 +3,8 @@ body {
     color: #777;
     margin: 0px;
     background-image: url(../images/gravel.png);
-    height: 100%;
+    position: relative;
+    min-height: 100vh;
 }
 
 h1, h2, .project span {
@@ -17,7 +18,7 @@ img {
 header {
     border-bottom-style: solid;
     border-bottom-color: #ccc;
-    overflow: auto;
+    overflow-y: auto;
     margin: 0em 0em 1em 0em;
     padding: 0em;
     background-color: white;
@@ -30,7 +31,7 @@ section,
 }
 
 #inside-header {
-    width: 1000px;
+    width: 994px;
     position: relative;
 }
 
@@ -77,7 +78,6 @@ header h1 {
 section {
     width: 960px;
     border-width: thin;
-    clear: both;
     padding: 1em;
     border-color: #ddd;
     border-style: solid;
@@ -90,11 +90,21 @@ section hr {
 }
 
 section img {
+    width: 200px;
     margin: 0em 1em 1em 0em;
 }
 
+section a:visited,
+section a:hover,
+section a:active {
+    color: #777;
+}
+
+#footer-space {
+    padding: 3em;
+}
+
 footer {
-    margin-top: 300px;
     border-top-style: solid;
     border-top-color: #4aaaa5;
     text-align: center;
@@ -104,6 +114,10 @@ footer {
     padding-bottom: 0.5em;
     color: white;
     font-size: small;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
 
 section h2 {
